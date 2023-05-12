@@ -10,4 +10,6 @@ function App() {
   );
 }
 
+// npm install php bin/console doctrine:database:create composer install
+
 export default App;
