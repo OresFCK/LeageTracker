@@ -11,7 +11,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { makeStyles } from '@mui/styles';
 
 const pages = ['Home', 'Login', 'Register', 'About'];
 
@@ -119,7 +118,7 @@ const Layout = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', textDecoration: 'none' }}
+                sx={{ my: 2, color: 'white', display: 'block'}}
               >
                 {page}
               </Button>
