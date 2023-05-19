@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar  from './pages/navbar';
+import Footer from './commons/footer';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     </div>
       <div>
         <Navbar/>
+        <Footer/>
       </div>
     </div>
     
