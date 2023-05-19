@@ -1,8 +1,8 @@
-import Layout from "./layout";
-import Home from "./home";
-import About from "./about"
-import Register from "./register"
-import Login from "./login"
+import Layout from "./pages/layout";
+import Home from "./pages/home";
+import About from "./pages/about"
+import Register from "./pages/register"
+import Login from "./pages/login"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar  from './pages/navbar';
+import Navbar  from './navigation/navbar';
 import Footer from './commons/footer';
 
 
