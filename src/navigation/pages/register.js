@@ -45,6 +45,7 @@ const Register = () => {
     <FormContainer>
         <h1>Registration</h1>
           <form onSubmit={handleSubmit}>
+
             <TextField
             value={nickname}
             onChange={(event) => setNickname(event.target.value)} 
@@ -53,6 +54,7 @@ const Register = () => {
             label="Nickname" 
             variant="outlined" 
             />
+
             <TextField
             value={email}
             onChange={(event) => setEmail(event.target.value)} 
@@ -62,6 +64,7 @@ const Register = () => {
             variant="outlined" 
             type='email'
             />
+            
             <TextField
             value={password}
             onChange={(event) => setPassword(event.target.value)}  
@@ -71,7 +74,9 @@ const Register = () => {
             variant="outlined" 
             type='password'
             />
+
             <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Register</Button>  
+            
           </form>
         </FormContainer>
     </Container>

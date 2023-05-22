@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Home', 'Login', 'Register', 'About'];
+const pages = ['Login', 'Register', 'About'];
 
 const Layout = () => {
 

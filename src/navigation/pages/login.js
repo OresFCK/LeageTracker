@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import styled from 'styled-components';
 import axios from 'axios';
 import api from './api/registerAndLoginApi'
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -33,6 +35,7 @@ const Login = () => {
 
       // Handle the response as needed
       console.log('Login successful');
+      navigate('/home');
     } catch (error) {
       // Handle the error response
       console.error('Login failed:', error);
@@ -43,6 +46,7 @@ const Login = () => {
     <FormContainer>
         <h1>Login</h1>
           <form onSubmit={handleSubmit}>
+
             <TextField 
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -51,6 +55,7 @@ const Login = () => {
              label="Email" 
              variant="outlined" 
              type='email' />
+
             <TextField
             value={password}
             onChange={(event) => setPassword(event.target.value)} 
@@ -59,7 +64,9 @@ const Login = () => {
             label="Password" 
             variant="outlined" 
             type='password' />
+
             <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Login</Button>
+            
           </form>  
         </FormContainer>
     </Container>
