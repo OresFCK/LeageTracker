@@ -12,7 +12,7 @@ import buildsImage from './images/builds.jpg';
 import profileImage from './images/placeholder2.jpg';
 
 
-const OutlinedCard = () => {
+const MenuCards = () => {
   return (
     <Box
       sx={{
@@ -82,4 +82,4 @@ const OutlinedCard = () => {
   );
 }
 
-export default OutlinedCard;
+export default MenuCards;

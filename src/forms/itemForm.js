@@ -62,7 +62,7 @@ const ItemForm = () => {
               type='number'
               />
               
-              <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Register</Button>  
+              <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Add item</Button>  
               
             </form>
           </FormContainer>
