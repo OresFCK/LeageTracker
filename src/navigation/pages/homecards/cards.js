@@ -55,7 +55,7 @@ const OutlinedCard = () => {
           />
         <CardActions>
           <Button variant='contained' size="small" component={Link} to="/builds">
-            Create and edit your builds
+            Create and edit your builds/items
           </Button>
         </CardActions>
       </Card>
