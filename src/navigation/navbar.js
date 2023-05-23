@@ -3,6 +3,9 @@ import Home from "./pages/home";
 import About from "./pages/about"
 import Register from "./pages/register"
 import Login from "./pages/login"
+import Builds from "./pages/homecards/builds";
+import Profile from "./pages/homecards/profile";
+import History from "./pages/homecards/history";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,6 +17,9 @@ const Navbar = () => {
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />
                 <Route path="about" element={<About />} />
+                <Route path="profile" element={<Profile />} />
+                <Route path="history" element={<History />} />
+                <Route path="builds" element={<Builds />} />
             </Route>
         </Routes>
     </BrowserRouter>
