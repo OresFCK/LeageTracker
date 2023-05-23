@@ -61,7 +61,7 @@ const ItemForm = () => {
               onChange={(event) => setItems(event.target.value)} 
               sx={{display:'block', marginBottom:'15px'}} 
               id="outlined-basic" 
-              label="Name" 
+              label="Items" 
               variant="outlined" 
               />
   
@@ -70,7 +70,7 @@ const ItemForm = () => {
               onChange={(event) => setCost(event.target.value)} 
               sx={{display:'block', marginBottom:'15px'}} 
               id="outlined-basic" 
-              label="Price" 
+              label="Cost" 
               variant="outlined" 
               type='number'
               />
@@ -80,12 +80,12 @@ const ItemForm = () => {
               onChange={(event) => setNotes(event.target.value)} 
               sx={{display:'block', marginBottom:'15px'}} 
               id="outlined-basic" 
-              label="Price" 
+              label="Notes" 
               variant="outlined" 
               type='number'
               />
               
-              <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Register</Button>  
+              <Button sx={{display:'block', marginBottom:'15px'}} variant="contained" type='submit'>Add build</Button>  
               
             </form>
           </FormContainer>
