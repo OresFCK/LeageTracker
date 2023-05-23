@@ -35,7 +35,7 @@ const OutlinedCard = () => {
             alt="Profile Image"
           />
         <CardActions>
-          <Button size="small" component={Link} to="/profile">
+          <Button variant='contained' size="small" component={Link} to="/profile">
             Your profile and general info
           </Button>
         </CardActions>
@@ -54,7 +54,7 @@ const OutlinedCard = () => {
             alt="Profile Image"
           />
         <CardActions>
-          <Button size="small" component={Link} to="/builds">
+          <Button variant='contained' size="small" component={Link} to="/builds">
             Create and edit your builds
           </Button>
         </CardActions>
@@ -73,7 +73,7 @@ const OutlinedCard = () => {
             alt="Profile Image"
           />
         <CardActions>
-          <Button size="small" component={Link} to="/history">
+          <Button variant='contained' size="small" component={Link} to="/history">
             Review and check your game history
           </Button>
         </CardActions>
